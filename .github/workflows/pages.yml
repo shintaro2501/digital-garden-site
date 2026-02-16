@@ -32,6 +32,11 @@ jobs:
 
       - name: Build
         run: npm run build
+    
+      - name: List dist
+        run: |
+          ls -la
+          ls -la dist
 
       # ✅ Digital Gardenのビルド成果物がどこに出るかで、ここだけ調整が必要になることがあります
       # 多くのEleventy構成では "_site" です
